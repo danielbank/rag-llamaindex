@@ -1,6 +1,6 @@
 # Retrieval-Augmented Generation with LlamaIndex
 
-A RAG-powered Web App demo using [Next.js](https://nextjs.org/) and [LlamaIndex](https://www.llamaindex.ai/).
+zA RAG-powered Web App demo using [Next.js](https://nextjs.org/) and [LlamaIndex](https://www.llamaindex.ai/).
 
 ## Slide Deck
 
@@ -8,13 +8,13 @@ This project was created as the demo for an accompanying talk: **Retrieval-Augme
 
 ## Bootstrapping a Next.js LlamaIndex Project
 
-[Create LlamaIndex App](https://www.npmjs.com/package/create-llama) is a CLI tool that helps us to quickly bootstrap a RAG-powered web app.  It can be run with the following command:
+[Create LlamaIndex App](https://www.npmjs.com/package/create-llama) is a CLI tool that helps us to quickly bootstrap a RAG-powered web app. It can be run with the following command:
 
 ```sh
 npx create-llama@latest
 ```
 
-The following options produce a minimal Next.js app that uses the local file system (`./data`) for its knowledge base and also stores the document embeddings in the local file system.  This is suitable for demo purposes but is not performant because we are not leveraging a vector database.
+The following options produce a minimal Next.js app that uses the local file system (`./data`) for its knowledge base and also stores the document embeddings in the local file system. This is suitable for demo purposes but is not performant because we are not leveraging a vector database.
 
 ```
 ✔ What is your project named? … my-app
@@ -33,7 +33,7 @@ The following options produce a minimal Next.js app that uses the local file sys
 
 ## Example RAG Use Case: Land of Sies
 
-The knowledge base in the `./data` folder contains information about Land of Sies characters in Markdown (`.md`) and PDF (`.pdf`) formats.  Land of Sies was a story I wrote in high school which is unknown outside of a small group of friends and people who visit my old blog (~0 people). As such, [ChatGPT](https://chat.openai.com/) has no information about this content in its training data.
+The knowledge base in the `./data` folder contains information about Land of Sies characters in Markdown (`.md`) and PDF (`.pdf`) formats. Land of Sies was a story I wrote in high school which is unknown outside of a small group of friends and people who visit my old blog (~0 people). As such, [ChatGPT](https://chat.openai.com/) has no information about this content in its training data.
 
 Asking [ChatGPT](https://chat.openai.com/), "Who is Mooflor?" produces an uncertain response:
 
